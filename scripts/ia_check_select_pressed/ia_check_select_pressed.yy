@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ia_check_select_pressed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ia_check_select_pressed",
+  "parent":{
+    "name":"ia",
+    "path":"folders/Scripts/utils/ia.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

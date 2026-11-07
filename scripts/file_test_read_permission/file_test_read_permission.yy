@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"file_test_read_permission",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"file_test_read_permission",
+  "parent":{
+    "name":"file",
+    "path":"folders/Scripts/utils/file.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

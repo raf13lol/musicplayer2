@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"settings_string_to_presence_detail_level",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"settings_string_to_presence_detail_level",
+  "parent":{
+    "name":"settings",
+    "path":"folders/Scripts/settings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

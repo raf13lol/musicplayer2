@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"wrap_value",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wrap_value",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/utils/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

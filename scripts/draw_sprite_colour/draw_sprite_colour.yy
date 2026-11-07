@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_sprite_colour",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_sprite_colour",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/utils/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"month_to_string",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"month_to_string",
+  "parent":{
+    "name":"string",
+    "path":"folders/Scripts/utils/string.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

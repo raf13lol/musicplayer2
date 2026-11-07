@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"update_saved_playback_options",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"update_saved_playback_options",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/utils/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

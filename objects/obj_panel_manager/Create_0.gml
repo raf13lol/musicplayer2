@@ -1,0 +1,1 @@
+switch_panel_key = global.settings.keybinds.switch_panel;

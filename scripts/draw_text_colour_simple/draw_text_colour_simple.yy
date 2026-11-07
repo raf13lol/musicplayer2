@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_text_colour_simple",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_text_colour_simple",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/utils/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

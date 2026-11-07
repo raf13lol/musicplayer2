@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"textbox_draw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"textbox_draw",
+  "parent":{
+    "name":"textbox",
+    "path":"folders/Scripts/helpers/textbox.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

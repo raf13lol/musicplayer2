@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ia_get_vertical_dir",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ia_get_vertical_dir",
+  "parent":{
+    "name":"ia",
+    "path":"folders/Scripts/utils/ia.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

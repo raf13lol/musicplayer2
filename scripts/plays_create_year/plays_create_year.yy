@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"plays_create_year",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"plays_create_year",
+  "parent":{
+    "name":"plays",
+    "path":"folders/Scripts/plays.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

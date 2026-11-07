@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ini_array",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ini_array",
+  "parent":{
+    "name":"misc",
+    "path":"folders/Scripts/utils/misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

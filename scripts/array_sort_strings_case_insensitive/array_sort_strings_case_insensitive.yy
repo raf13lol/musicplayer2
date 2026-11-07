@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_sort_strings_case_insensitive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_sort_strings_case_insensitive",
+  "parent":{
+    "name":"array",
+    "path":"folders/Scripts/utils/array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

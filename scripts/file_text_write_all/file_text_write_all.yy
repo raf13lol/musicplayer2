@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"file_text_write_all",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"file_text_write_all",
+  "parent":{
+    "name":"file",
+    "path":"folders/Scripts/utils/file.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

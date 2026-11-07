@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"array_swap",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_swap",
+  "parent":{
+    "name":"array",
+    "path":"folders/Scripts/utils/array.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
