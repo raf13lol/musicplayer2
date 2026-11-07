@@ -3,7 +3,7 @@ function update_saved_playback_options(key_name, value)
     ini_open(SONGS_INI_FILE);
     
     var section = "";
-    if (current_sound != noone && !keyboard_check_pressed(vk_shift))
+    if (current_sound != noone && !keyboard_check(vk_shift))
         section = filename_handle_relative_path(current_sound_path, global.sf_combined_directories);
     
     if (keyboard_check(vk_control))
