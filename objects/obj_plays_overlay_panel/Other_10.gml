@@ -23,8 +23,16 @@ draw_text_selected(0, 0, list_type_text, vertical_selected == 0);
 draw_text_selected(0, 16, time_period_text, vertical_selected == 1);
 
 var y_offset = 32 + 4;
+var has_plays = plays_length > 0;
 
-if (plays_length == 0)
+if (has_plays || global.settings.accurate_total_playtime)
+{
+    draw_set_halign(fa_right);
+    draw_text(width, height - 16, $"total playtime: {string_format_time_secs(total_playtime)}");
+    draw_set_halign(fa_left)
+}
+
+if (!has_plays)
 {
     draw_text(0, y_offset, "no plays yet!");
     exit;
@@ -58,5 +66,4 @@ for (var i = 0; i < repeats; i++)
     draw_set_colour(c_white);
 }
 
-if (plays_length > 0)
-    draw_text(0, height - 16, $"total plays: {total_plays}");
+draw_text(0, height - 16, $"total plays: {total_plays}");

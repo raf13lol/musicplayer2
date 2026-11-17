@@ -50,6 +50,7 @@ the stop button clears queue
 the playlist button opens the playlist creation prompt (playlists are just a snapshot of the current queue)
 
 if you go down onto the queue you can jump via enter and backspace to remove currently selected song (ctrl affects this)
+if you hold shift, you can rearrange the queue order
 
 the playlist panel:
 you can press enter to load the playlist into the queue (if shift is held it will add the songs from the playlist onto the queue)

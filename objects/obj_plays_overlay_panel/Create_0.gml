@@ -14,6 +14,7 @@ vertical_selected = 0;
 plays = [];
 plays_length = 0;
 total_plays = 0;
+total_playtime = 0;
 event_user(1); // update plays
 
 plays_height = ((height - 3 * 16 - 4) div 32); // -1 for list_type, -1 for time period, -1 to display total plays at the bottom

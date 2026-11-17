@@ -1,6 +1,9 @@
+var was_inherited = is_focused();
 event_inherited();
 if (!is_focused())
     exit;
+if (!was_inherited)
+    event_user(1); // update plays
 
 var horizontal_dir = ia_get_horizontal_dir();
 vertical_selection_update(plays_length + 2, plays_height);

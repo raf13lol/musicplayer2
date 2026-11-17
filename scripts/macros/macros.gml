@@ -3,6 +3,9 @@
 #macro PANELS_INI_FILE "panels.ini"
 
 #macro PLAYS_JSON_FILE "plays.json"
+#macro PLAYS_PLAYTIME_NAME "@////playtime////@"
+#macro PLAYS_PLAYTIME_HASH variable_get_hash(PLAYS_PLAYTIME_NAME)
+
 #macro SETTINGS_JSON_FILE program_directory + "settings.json"
 
 #macro PANEL_PADDING 4

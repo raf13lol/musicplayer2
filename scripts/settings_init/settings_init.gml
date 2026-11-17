@@ -3,9 +3,12 @@ function settings_init()
     global.settings = {
         font_index: 0,
         presence_level: "playing",
+        
         default_search_open: true,
         search_locks_panel: false,
+        
         percentage_played_needed: 30,
+        accurate_total_playtime: false,
         
         keybinds: {
             panels: {
@@ -43,6 +46,7 @@ function settings_init()
     // bools
     global.settings.default_search_open = settings_get_value(json, "default_search_open", global.settings.default_search_open);
     global.settings.search_locks_panel = settings_get_value(json, "search_locks_panel", global.settings.search_locks_panel);
+    global.settings.accurate_total_playtime = settings_get_value(json, "accurate_total_playtime", global.settings.accurate_total_playtime);
     
     // reals
     global.settings.font_index = settings_get_value(json, "font_index", global.settings.font_index) 
@@ -51,4 +55,6 @@ function settings_init()
     // validation
     global.settings.font_index = clamp(floor(global.settings.font_index), 0, array_length(global.panel_fonts) - 1);
     global.settings.percentage_played_needed = clamp(global.settings.percentage_played_needed, 0, 100) / 100;
+    
+    file_text_write_all(SETTINGS_JSON_FILE, json_stringify(global.settings, true));
 }

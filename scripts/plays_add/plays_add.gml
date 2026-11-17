@@ -7,5 +7,8 @@ function plays_add(song_path)
     plays_save();
     
     with (obj_plays_overlay_panel)
-        event_user(1); // update plays
+    {
+        if (is_focused())
+            event_user(1); // update plays
+    }
 }

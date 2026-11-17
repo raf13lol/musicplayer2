@@ -4,6 +4,7 @@ current_channel = noone;
 
 current_sound_length = 0;
 current_sound_played = 0;
+current_sound_played_secs = 0;
 current_sound_added_play = false;
 
 current_queue = [];
@@ -16,6 +17,7 @@ loop_mode = loop_type.queue;
 shuffle_mode = shuffle_type.none;
 shuffle_perserve_index = true;
 queue_order_start = noone;
+queue_order_start_target = 0;
 
 ini_open(SONGS_INI_FILE);
 

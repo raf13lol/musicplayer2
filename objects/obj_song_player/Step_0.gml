@@ -7,13 +7,25 @@ if (ia_keyboard_check_pressed_direct(win_system_keys.media_previous_track, alt_p
 if (ia_keyboard_check_pressed_direct(win_system_keys.media_next_track, alt_next_track_key))
     event_user(5); // next track
 
-if (current_sound != noone && !paused && !current_sound_added_play)
+if (current_sound != noone && !paused)
 {
-    current_sound_played += (delta_time / 1_000) * pitch;
-    if (current_sound_played >= current_sound_length * global.settings.percentage_played_needed)
+    var dt_ms = delta_time / 1_000;
+    
+    current_sound_played_secs += dt_ms / 1_000;
+    if (current_sound_played_secs >= 1.0)
     {
-        current_sound_added_play = true;
-        plays_add(current_sound_path);
+        plays_add_second();
+        current_sound_played_secs -= 1.0;
+    }
+    
+    if (!current_sound_added_play)
+    {
+        current_sound_played += dt_ms * pitch;
+        if (current_sound_played >= current_sound_length * global.settings.percentage_played_needed)
+        {
+            current_sound_added_play = true;
+            plays_add(current_sound_path);
+        }
     }
 }
 

@@ -17,6 +17,7 @@ if (do_shuffle && queue_order_start != noone)
     if (index_of_start == -1)
         exit;
     
-    array_swap(current_queue_order, 0, index_of_start);
+    array_swap(current_queue_order, queue_order_start_target, index_of_start);
     queue_order_start = noone;
+    queue_order_start_target = 0;
 }

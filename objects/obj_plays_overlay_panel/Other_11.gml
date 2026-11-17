@@ -25,10 +25,11 @@ switch (list_type)
             for (var j = 1; j <= 12; j++)
                 array_push(months_to_scan, plays_create_month(year, j));
         }
-        break;
+        break; 
 }
 
 total_plays = 0;
+total_playtime = 0;
 
 var overall_plays = {};
 var month_count = array_length(months_to_scan);
@@ -36,12 +37,17 @@ for (var i = 0; i < month_count; i++)
 {
     var month = months_to_scan[i];
     
+    if (struct_exists(month, PLAYS_PLAYTIME_NAME))
+        total_playtime += month[$ PLAYS_PLAYTIME_NAME];
+    
     var songs = struct_get_names(month);
     var song_count = struct_names_count(month);
     for (var j = 0; j < song_count; j++)
     {
         var song = songs[j];
         var hash = variable_get_hash(song);
+        if (hash == PLAYS_PLAYTIME_HASH)
+            continue;
         
         var month_play_count = struct_get_from_hash(month, hash);
         total_plays += month_play_count;

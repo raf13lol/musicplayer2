@@ -18,5 +18,5 @@ function string_format_time(milliseconds)
     else
         m = string(raw_minutes % 60);
     
-    return $"{m}:{s}.{ms}";
+    return $"{h}{m}:{s}.{ms}";
 }

@@ -53,10 +53,13 @@ function (text, control_pressed)
         {
             if (shuffle_enabled)
             {
-                if (!shift_pressed)
-                    queue_order_start = song_index;
-                else
+                if (shift_pressed)
+                {
                     queue_order_start = current_sound != noone ? current_queue_order[current_queue_index] : noone;
+                    queue_order_start_target = current_queue_index;
+                }
+                else
+                    queue_order_start = song_index;
             }
             
             event_user(4); // create queue order
